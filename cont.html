@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+        
+        .container {
+            background-color: #ffffff;
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        h2 {
+            text-align: center;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            font-weight: bold;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        
+        .btn {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Car Registration Form</h2>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="carMake">Car Make:</label>
+                <input type="text" id="carMake" name="carMake" required>
+            </div>
+            <div class="form-group">
+                <label for="carModel">Car Model:</label>
+                <input type="text" id="carModel" name="carModel" required>
+            </div>
+            <div class="form-group">
+                <label for="carYear">Car Year:</label>
+                <input type="text" id="carYear" name="carYear" required>
+            </div>
+            <div class="form-group">
+                <label for="ownerName">Owner's Name:</label>
+                <input type="text" id="ownerName" name="ownerName" required>
+            </div>
+            <div class="form-group">
+                <label for="ownerEmail">Owner's Email:</label>
+                <input type="email" id="ownerEmail" name="ownerEmail" required>
+            </div>
+            <div class="form-group">
+                <label for="carColor">Car Color:</label>
+                <select id="carColor" name="carColor">
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                    <option value="black">Black</option>
+                    <option value="white">White</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="carDescription">Car Description:</label>
+                <textarea id="carDescription" name="carDescription" rows="4"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn">Register Car</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
